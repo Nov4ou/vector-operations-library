@@ -1,1 +1,1 @@
-# vector-operations-library
+# Vector Operations Library Using Makefile (CSAPP)

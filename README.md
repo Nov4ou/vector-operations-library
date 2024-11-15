@@ -9,3 +9,5 @@ Then run th program:
 ```shell
 ./prog21
 ```
+
+Or using the absolute path, uncomment the Compile main program and link with shared library step on Makefile.

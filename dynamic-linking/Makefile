@@ -27,6 +27,10 @@ all: $(TARGET)
 $(TARGET): $(BUILD_DIR)/main2.o $(SHARED_LIB)
 	$(CC) $(CFLAGS) -o $(TARGET) $(BUILD_DIR)/main2.o -L$(BUILD_DIR) -lvector
 
+# # Compile main program and link with shared library
+# $(TARGET): $(BUILD_DIR)/main2.o $(SHARED_LIB)
+# 	$(CC) $(CFLAGS) -o $(TARGET) $(BUILD_DIR)/main2.o $(SHARED_LIB)
+
 # Build shared library
 $(SHARED_LIB): $(BUILD_DIR)/addvec.o $(BUILD_DIR)/multvec.o
 	$(CC) $(LDFLAGS) -o $(SHARED_LIB) $(BUILD_DIR)/addvec.o $(BUILD_DIR)/multvec.o
